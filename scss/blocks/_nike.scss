@@ -1,0 +1,32 @@
+.nike__inner {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nike__heading {
+    // max-width: 250px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nike__content {
+    max-width: 400px;
+    padding-left: 25px;
+    border-left: 1px solid rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+.nike__btn {
+    @include button (100px, rgb(255, 0, 0))
+}
+
+.nike__btn:hover {
+    opacity: 0.8;
+}
+
+.nike__img {
+    max-width: 500px;
+    height: 800px;
+}
