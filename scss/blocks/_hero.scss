@@ -1,5 +1,6 @@
 .hero {
-    padding: 260px 0;
+    height: 1000px;
+    padding: 150px 0;
     background-image: url("../img/watches.jpg");
     background-repeat: no-repeat;
     background-position: calc(50% + 600px);
@@ -40,8 +41,15 @@
     color: rgb(255, 255, 255);
 }
 
+
 @media only screen and (max-width: 875px) {
+    .hero {
+        background-position: calc(50% + 400px);
+    }
+}
+
+@media only screen and (max-width: 640px) {
   .hero {
-      background-position: calc(50% + 400px);
+      background-image: none;
   }
 }

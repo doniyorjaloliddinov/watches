@@ -37,3 +37,28 @@
 .footer__btn:hover {
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        padding-bottom: 100px;
+    }
+
+    .footer__inner {
+      margin-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__heading {
+      margin: 0;
+  }
+
+  .footer__content {
+      margin: 0;
+  }
+
+  .footer__btn {
+      width: 180px;
+  }
+}

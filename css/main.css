@@ -449,6 +449,25 @@ a {
           justify-content: space-between;
 }
 
+.humburger-btn {
+  display: none;
+}
+
+.humburger-btn__img {
+  width: 20px;
+  height: 17px;
+  -webkit-filter: invert(99%) sepia(89%) saturate(1331%) hue-rotate(349deg) brightness(107%) contrast(92%);
+          filter: invert(99%) sepia(89%) saturate(1331%) hue-rotate(349deg) brightness(107%) contrast(92%);
+}
+
+@media only screen and (max-width: 640px) {
+  .humburger-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+}
+
 .nav-question-wrapper {
   margin-right: 80px;
   display: -webkit-box;
@@ -460,6 +479,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-question-wrapper {
+    display: none;
+  }
 }
 
 .navbar__list {
@@ -500,7 +525,8 @@ a {
 }
 
 .hero {
-  padding: 260px 0;
+  height: 1000px;
+  padding: 150px 0;
   background-image: url("../img/watches.jpg");
   background-repeat: no-repeat;
   background-position: calc(50% + 600px);
@@ -544,6 +570,25 @@ a {
 @media only screen and (max-width: 875px) {
   .hero {
     background-position: calc(50% + 400px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .hero {
+    background-image: none;
+  }
+}
+
+.responsived-img-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .responsived-img-wrapper {
+    height: 800px;
+    display: block;
+    background-image: url("../img/watches.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -612,6 +657,21 @@ a {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 900px) {
+  .advise__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .advise__list {
+    margin-top: 250px;
+  }
+}
+
 .nike__inner {
   margin-top: 80px;
   display: -webkit-box;
@@ -656,6 +716,28 @@ a {
   height: 800px;
 }
 
+@media only screen and (max-width: 950px) {
+  .nike__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nike__info {
+    margin-bottom: 25px;
+  }
+  .nike__img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nike__img {
+    width: 320px;
+  }
+}
+
 .footer {
   width: 100%;
   padding-bottom: 3000px;
@@ -693,5 +775,26 @@ a {
 
 .footer__btn:hover {
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+  .footer__inner {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__heading {
+    margin: 0;
+  }
+  .footer__content {
+    margin: 0;
+  }
+  .footer__btn {
+    width: 180px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

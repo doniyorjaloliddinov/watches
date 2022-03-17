@@ -30,3 +30,24 @@
     max-width: 500px;
     height: 800px;
 }
+
+@media only screen and (max-width: 950px) {
+  .nike__inner {
+      flex-direction: column;
+  }
+
+  .nike__info {
+      margin-bottom: 25px;
+  }
+
+  .nike__img {
+      width: 400px;
+      height: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nike__img {
+      width: 320px;
+  }
+}

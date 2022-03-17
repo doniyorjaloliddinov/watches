@@ -4,3 +4,9 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 640px) {
+    .nav-question-wrapper {
+        display: none;
+    }
+}

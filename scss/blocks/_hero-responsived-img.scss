@@ -1,0 +1,12 @@
+.responsived-img-wrapper {
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .responsived-img-wrapper  {
+        height: 800px;
+        display: block;
+        background-image: url("../img/watches.jpg");
+        background-repeat: no-repeat;
+    }
+}
